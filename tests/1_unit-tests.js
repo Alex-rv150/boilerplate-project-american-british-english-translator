@@ -11,8 +11,8 @@ const Translator = require('../components/translator.js');
 
 suite('Unit Tests', function() {
 
-
-test("1.1" , function(done){
+    suite('american to british', () => {
+        test("1.1" , function(done){
 
 chai.request(server)
       .post('/api/translate')
@@ -308,7 +308,16 @@ chai.request(server)
 
   })
 
-   test("1.11" , function(done){
+
+
+
+
+
+
+    });
+
+    suite('british to american', () => {
+         test("1.11" , function(done){
 
 chai.request(server)
       .post('/api/translate')
@@ -598,7 +607,12 @@ chai.request(server)
   })
 
 
-   test("1.21" , function(done){
+    });
+
+
+    suite('highlight', () => {
+
+test("1.21" , function(done){
 
 chai.request(server)
       .post('/api/translate')
@@ -749,6 +763,14 @@ console.log(res.body)
 
 
   })
+
+        
+    });
+
+
+
+  
+   
  
 
   
