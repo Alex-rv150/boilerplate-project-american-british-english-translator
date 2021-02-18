@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 
 const Translator = require('../components/translator.js');
 
-suite('Unit Tests ->', function() {
+suite('Unit Tests', function() {
 
    
         test("1.1" , function(done){
