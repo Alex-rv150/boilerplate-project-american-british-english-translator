@@ -11,7 +11,7 @@ const Translator = require('../components/translator.js');
 
 suite('Unit Tests ->', function() {
 
-    suite('american to british', function(){
+   
         test("1.1" , function(done){
 
 chai.request(server)
@@ -314,9 +314,9 @@ chai.request(server)
 
 
 
-    });
 
-    suite('british to american', function() {
+
+   
          test("1.11" , function(done){
 
 chai.request(server)
@@ -607,10 +607,10 @@ chai.request(server)
   })
 
 
-    });
+  
 
 
-    suite('highlight', function()  {
+   
 
 test("1.21" , function(done){
 
@@ -765,7 +765,7 @@ console.log(res.body)
   })
 
         
-    });
+  
 
 
 
