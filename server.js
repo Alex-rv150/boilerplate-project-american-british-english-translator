@@ -37,10 +37,12 @@ app.use(function(req, res, next) {
 
 const portNum = process.env.PORT || 3000;
 
+
+let o = "si"
 // Start our server and tests!
 app.listen(portNum, () => {
   console.log(`Listening on port ${portNum}`);
-  if (process.env.UNO  ===  'si') {
+  if (o ===  'si') {
     console.log('Running Tests...');
     setTimeout(function () {
       try {
