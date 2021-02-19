@@ -62,7 +62,7 @@ module.exports = function (app) {
   app.get('/_api/get-tests', cors(), function(req, res, next){
     console.log(error,  "hola mami");
     if(!error && process.env.NODE_ENV === 'test') return next();
-    res.json({status: 'unavailable'});
+    res.json({status: 'unavailable' , error: error , NODE_ENV : process.env.NODE_ENV});
   },
   function(req, res, next){
     if(!runner.report) return next();
