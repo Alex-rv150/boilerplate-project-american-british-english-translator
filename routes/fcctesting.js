@@ -62,7 +62,7 @@ module.exports = function (app) {
   app.get('/_api/get-tests', cors(), function(req, res, next){
     console.log(error,  "hola mami");
     if(!error && process.env.UNO === 'si') return next();
-    res.json({status: 'unavailable' , error: error , UNO: process.env.UNO});
+    res.json({status: 'unavailable' ,  cualquiera: "hola"});
   },
   function(req, res, next){
     if(!runner.report) return next();
